@@ -1,0 +1,37 @@
+body {
+  background-color:#FFFFFF ;
+  color: #757575;
+}
+/* header */
+.logo-1 {
+  color:#2196F3;
+}
+.logo-2 {
+  color:#000000;
+}
+.logo-1 :hover {
+  color: #2196F3;
+}
+
+li {
+  list-style: none;
+}
+
+
+.ul-nav {
+  color: #212121;
+}
+
+.ul-nav :hover, 
+.ul-nav :focus{
+  color: #2196F3;
+}
+
+.address-header {
+  color: #757575;
+}
+
+.adress-header :hover,
+.adress-header :focus{
+  color: #2196F3;
+}
