@@ -1,16 +1,23 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: ;
+  --hover: #2196F3;
+}
+
 body {
   background-color:#FFFFFF ;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 /* header */
 .logo-1 {
-  color:#2196F3;
+  color: ar(--hover);
 }
 .logo-2 {
   color:#000000;
 }
 .logo-1 :hover {
-  color: #2196F3;
+  color: var(--hover);
 }
 
 li {
@@ -19,19 +26,48 @@ li {
 
 
 .ul-nav {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .ul-nav :hover, 
 .ul-nav :focus{
-  color: #2196F3;
+  color: var(--hover);
 }
 
 .address-header {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .adress-header :hover,
 .adress-header :focus{
-  color: #2196F3;
+  color: var(--hover);
+}
+/* hero */
+.button-hero :hover,
+.button-hero :focus {
+  color: var(--hover);
+}
+/* main */
+.title-section {
+  color: var(--title-text-color);
+}
+h3 {
+  color: var(--title-text-color);
+}
+
+
+.button :hover,
+.button :focus {
+  color: var(--hover);
+}
+
+
+
+/* footer */
+
+
+
+.adress :hover,
+.adress :focus {
+  color: var(--hover);
 }
