@@ -35,14 +35,12 @@ body {
   text-decoration: none;
 }
 
-
 li {
   list-style: none;
   
 }
 
-
-.ul-nav li {
+.ul-nav a {
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -50,18 +48,23 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.ul-nav a {
+  text-decoration: none;
+}
 .ul-nav :hover, 
 .ul-nav :focus{
   color: var(--hover);
   text-decoration: none;
 }
-.address-header {
+.adress-header a {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+.adress-header a {
+  text-decoration: none;
 }
 
 .adress-header :hover,
@@ -84,7 +87,7 @@ li {
   text-transform: uppercase;
   color: var(--accent-color);
 }
-.hero-button {
+.hero .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -93,9 +96,12 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--accent-color);
+  background-color: var(--hover);
 }
-.hero-button :hover {
-color: var(--hover);
+.hero .hero-button :hover,
+.hero button :focus {
+  color: var(--hover);
+
 }
 /* main */
 .title-section {
@@ -104,15 +110,27 @@ color: var(--hover);
 h3 {
   color: var(--title-text-color);
 }
-
+/* Кнопки */
 .button {
   font-family: inherit;
+}
+.button button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 .button :hover,
 .button :focus {
   text-decoration: none;
   background-color: var(--hover);
   color: var(--accent-color);
+  height: 38px;
+  top: 174px;
   
 }
 
@@ -128,6 +146,9 @@ h3 {
 .sorting :focus {
 text-decoration: none;
 }
+.sorting a {
+  text-decoration: none;
+}
 
 .our-team {
   background-color: #F5F4FA;
@@ -138,21 +159,30 @@ text-decoration: none;
   height: 368px;
   top: 1632px;
 }
+p {
+  color: var(--primary-text-color);
+}
 /* footer */
 
 footer {
   background-color: #2F303A;
 
 }
-
-
 .adress :hover,
 .adress :focus {
   color: var(--hover);
   text-decoration: none;
 }
 
-.mail {
-  color: rgba(255, 255, 255, 0.6);
+.adress a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-style: normal;
+}
+a[href="tel:+380961111111"] {
+  color: var(--primary-text-color);
 }
 
+a[href="mailto:info@devstudio.com"] {
+  color: var(--primary-text-color);
+}
