@@ -11,6 +11,10 @@ body {
   font-family: Roboto, sans-serif;
   
 }
+
+.ul-nav .backlight {
+  color: var(--hover);
+}
 /* header */
 .logo-1 {
   color: var(--hover);
@@ -39,32 +43,29 @@ li {
   list-style: none;
   
 }
-
-.ul-nav a {
+.link {
   color: var(--title-text-color);
   text-decoration: none;
+}
+
+.ul-nav  {
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.ul-nav a {
-  text-decoration: none;
-}
+
 .ul-nav :hover, 
 .ul-nav :focus{
   color: var(--hover);
-  text-decoration: none;
 }
-.adress-header a {
+.adress-header .link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.adress-header a {
-  text-decoration: none;
 }
 
 .adress-header :hover,
@@ -87,53 +88,49 @@ li {
   text-transform: uppercase;
   color: var(--accent-color);
 }
-.hero .hero-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
+.hero .hero-button  {
   text-align: center;
-  letter-spacing: 0.06em;
+}
+.hero .hero-button1 {
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 1.87;
+ letter-spacing: 0.06em;
+ color: var(--title-text-color);
+ background-color: var(--accent-color);
+}
+
+.hero .hero-button :hover,
+.hero .hero-button :focus {
   color: var(--accent-color);
   background-color: var(--hover);
-}
-.hero .hero-button :hover,
-.hero button :focus {
-  color: var(--hover);
 
 }
 /* main */
 .title-section {
   color: var(--title-text-color);
 }
-h3 {
+h2, h3 {
   color: var(--title-text-color);
 }
 /* Кнопки */
+
 .button {
-  font-family: inherit;
-}
-.button button {
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
-.button :hover,
-.button :focus {
-  text-decoration: none;
+.button :hover {
   background-color: var(--hover);
   color: var(--accent-color);
   height: 38px;
   top: 174px;
-  
 }
-
 .sorting {
   background: var(--accent-color);
   width: 370px;
@@ -166,23 +163,18 @@ p {
 
 footer {
   background-color: #2F303A;
-
 }
-.adress :hover,
-.adress :focus {
+
+.adress .ul-adress :hover,
+.adress .ul-adress :focus {
   color: var(--hover);
-  text-decoration: none;
 }
 
-.adress a {
-  color: var(--accent-color);
-  text-decoration: none;
+.adress .grey {
+  color: var(--primary-text-color);
   font-style: normal;
 }
-a[href="tel:+380961111111"] {
-  color: var(--primary-text-color);
-}
-
-a[href="mailto:info@devstudio.com"] {
-  color: var(--primary-text-color);
+.adress .white {
+  color: var(--accent-color);
+  font-style: normal;
 }
