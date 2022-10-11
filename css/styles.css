@@ -98,15 +98,21 @@ li {
  letter-spacing: 0.06em;
  color: var(--title-text-color);
  background-color: var(--accent-color);
+cursor: pointer;
 }
 
 .hero .hero-button :hover,
 .hero .hero-button :focus {
   color: var(--accent-color);
-  background-color: var(--hover);
+  background-color: #188CE8;
 
 }
 /* main */
+.h1-hidden,
+.h2-hidden {
+  display: none;
+}
+
 .title-section {
   color: var(--title-text-color);
 }
@@ -124,12 +130,17 @@ h2, h3 {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  cursor: pointer;
+
+  
 }
-.button :hover {
+.li-button  :hover {
   background-color: var(--hover);
   color: var(--accent-color);
-  height: 38px;
-  top: 174px;
+}
+.ul-button .blue {
+  color: var(--accent-color);
+  background-color: var(--hover);
 }
 .sorting {
   background: var(--accent-color);
